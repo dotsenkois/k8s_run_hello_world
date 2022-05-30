@@ -1,2 +1,4 @@
 ---
-# tasks file for k8s_run_hello_world
+- import_tasks: install_kubernates.yml
+- import_tasks: create_dockerimage.yml
+- import_tasks: create_dockerimage.yml

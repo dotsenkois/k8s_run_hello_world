@@ -1,0 +1,17 @@
+- name: Copy Dockerfile to manage host
+  copy:
+    src: "./Dockerfile"
+    mode: 0755
+    dest: "/tmp/Dockerfile"
+- name: Copy server.js to manage host
+  copy:
+    src: "./server.js"
+    mode: 0755
+    dest: "/tmp/server.js"
+- name: build container image
+  docker_image:
+    name: hellow_k8s
+    build:
+      path: /tmp
+      source: build
+    state: present
