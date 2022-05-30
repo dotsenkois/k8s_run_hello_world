@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include dotsenkois.k8s_run_hello_world"
+      include_role:
+        name: "dotsenkois.k8s_run_hello_world"
