@@ -1,4 +1,4 @@
 ---
-- import_tasks: install_kubernates.yml
-- import_tasks: create_dockerimage.yml
-- import_tasks: create_dockerimage.yml
+- import_tasks: "install_kubernates.yml"
+- import_tasks: "create_dockerimage.yml"
+- import_tasks: "create_dockerimage.yml"
