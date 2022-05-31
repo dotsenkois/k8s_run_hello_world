@@ -9,6 +9,7 @@
     mode: 0655
     dest: "/tmp/server.js"
 - name: build container image
+  become: true
   docker_image:
     name: hellow_k8s
     build:
