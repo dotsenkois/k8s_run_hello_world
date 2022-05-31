@@ -1,5 +1,5 @@
 - name: run container with k8s
   become: true
   ansible.builtin.shell: 
-    cmd: kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4 && kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+    cmd: kubectl create deployment hello-node --image={{ docker_image_name }} && kubectl expose deployment hello-node --type=LoadBalancer --port=8080
 
