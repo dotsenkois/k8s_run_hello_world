@@ -1,4 +1,3 @@
 ---
 - import_tasks: install_minikube_addons.yml
-- import_tasks: create_dockerimage.yml
 - import_tasks: run_image.yml
