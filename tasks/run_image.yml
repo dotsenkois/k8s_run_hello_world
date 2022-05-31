@@ -1,5 +1,5 @@
 - name: run container with k8s
   become: true
   ansible.builtin.shell: 
-    cmd: kubectl create deployment hello-node --image=hellow_k8s
+    cmd: kubectl create deployment hello-node --image={{ docker_image_name }}
 

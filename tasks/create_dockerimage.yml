@@ -11,8 +11,8 @@
 - name: build container image
   become: true
   docker_image:
-    name: hellow_k8s
-    source: build  # <-- add
+    name: "{{ docker_image_name }}"
+    source: build
     build:
       path: /tmp
     state: present
