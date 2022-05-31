@@ -1,4 +1,4 @@
 - name: Minikube. Enable addons
-  # become: true
+  become: true
   ansible.builtin.shell: 
     cmd: minikube addons enable ingress && minikube addons enable dashboard
