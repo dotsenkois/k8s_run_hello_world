@@ -22,12 +22,12 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
----
+```yaml
 - hosts: minikube
   roles:
     - install_minikube
     - k8s_run_hello_world
-
+```
 
 License
 -------
